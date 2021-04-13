@@ -1,40 +1,63 @@
 <!DOCTYPE html>
-<html lang="EN">
+<html lang="en">
+
 <head>
+    <title>Bootstrap Example</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-    <section id="app">
-        <h1>Apps</h1>
-        <div class="line"></div>
-        <iframe width="400" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/ZCFCo8mNoO3BsF0jBRKZj9tFjk4BaPbiyEHNfGfLoFk/embed"></iframe>
-        <iframe width="400" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/8w-r-G7NAgH8qGXD1U2hk9RmcXw7e9xH4oT-aa8RWkk/embed"></iframe>
-    </section>
-    <section id="game">
-        <h1>Games</h1>
-        <div class="line"></div>
-        <a href ="https://studio.code.org/projects/flappy/kyX7Js5o9Gar91qtjgJs-4LMDQ3ANbwJEzMnjXkxhPs">
-            
-        </a>
-        <a href="https://studio.code.org/projects/spritelab/N2dzgAiplxP_2lDrKljBKRQ579nJLmL5RCRXz2PkXi0" target="_blank">
-            <img src="download.png" height="600" width="400">
-        </a>
-        
-    </section>
-    <section id="chatbot">
-        <h1>ChatBot</h1>
-        <div class="line"></div>
-        <iframe
-    allow="microphone;"
-    width="350"
-    height="430"
-    src="https://console.dialogflow.com/api-client/demo/embedded/746ee775-926b-4deb-9171-23c963da9a4e">
-</iframe>
-    </section>
-    
+
+    <div class="container">
+
+        <section id="app">
+            <h1>Apps</h1>
+            <div class="line"></div>
+            <iframe width="400" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/AmAIOlod-80aGvVFcBdbfjebPGUlVaYjI8ECZcJtZks/embed"></iframe>
+            <iframe width="400" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/U9AQsuLnTixFr5caYUBM9qmkuaPCvmuWblFMcUPrC14/embed"></iframe>
+        </section>
+
+        <!--
+Start your code from here
+-->
+        <h2>Click on the games to explore</h2>
+        <h5>This games are build in game lab, click on the game to play</h5>
+        <div id="myCarousel" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="item active">
+                    <center>
+                        <a href="#" target="_blank">
+                            <img src="Car_game.png" class="img-responsive">
+                        </a>
+
+
+                        <div class="carousel-content">
+                            <p>Car_game</p>
+                        </div>
+                    </center>
+                </div>
+                <div class="item">
+                    <center>
+                        <a href="#" target="_blank">
+                            <img src="Winne_Pooh.png" class="img-responsive">
+
+                        </a>
+
+                        <div class="carousel-content">
+                            <p>Winne The Pooh_game</p>
+                        </div>
+                    </center>
+                </div>
+            </div><a class="left carousel-control" href="#myCarousel" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span> </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span> </a>
+        </div>
+
+    </div>
+
 </body>
+
 </html>
